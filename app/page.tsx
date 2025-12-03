@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-primary text-primary-foreground">
+    <main className="min-h-screen bg-primary text-primary-foreground bg-diagonal-pattern">
       {/* Top bar with retro feel */}
       <div className="border-b border-accent/30 px-4 py-2 font-mono text-xs">
         <div className="mx-auto flex max-w-6xl items-center justify-between">
