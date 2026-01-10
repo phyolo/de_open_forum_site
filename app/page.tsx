@@ -29,10 +29,8 @@ export default function Home() {
                   {"> NOW_ACCEPTING_SUBMISSIONS_ "}
                 </a>
               </div>
-              <h1 className="text-balance font-mono text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
-                Data Engineering
-                <br />
-                Open Forum
+              <h1 className="text-balance font-mono text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl whitespace-pre-line">
+                Data Engineering Open Forum
               </h1>
               <div className="font-mono text-lg text-muted-foreground sm:text-xl">
                 {"// San Francisco: April 16th, 2026"}

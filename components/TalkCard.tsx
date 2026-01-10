@@ -19,8 +19,11 @@ export default function TalkCard({ talk }: TalkCardProps) {
       </h2>
 
       <div className="space-y-1">
-        {talk.authors.map((author, index) => (
-          <div key={index} className="font-mono text-sm text-muted-foreground">
+        {talk.authors.map((author) => (
+          <div
+            key={author.name}
+            className="font-mono text-sm text-muted-foreground"
+          >
             <span className="text-primary-foreground">{author.name}</span>
             {" // "}
             <span>{author.title}</span>

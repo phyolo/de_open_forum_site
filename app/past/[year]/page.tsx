@@ -6,7 +6,7 @@ import eventData2025 from "@/data/past/2025.json";
 import { notFound } from "next/navigation";
 
 // type definitions for event data
-interface eventData {
+interface EventData {
   year: string;
   title: string;
   date: string;
@@ -16,7 +16,7 @@ interface eventData {
 }
 
 // Map of available years to their data
-const eventDataMap: Record<string, eventData> = {
+const eventDataMap: Record<string, EventData> = {
   "2024": eventData2024,
   "2025": eventData2025,
 };

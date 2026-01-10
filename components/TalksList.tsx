@@ -18,8 +18,8 @@ interface TalksListProps {
 export default function TalksList({ talks }: TalksListProps) {
   return (
     <div className="space-y-8">
-      {talks.map((talk, index) => (
-        <TalkCard key={index} talk={talk} />
+      {talks.map((talk) => (
+        <TalkCard key={talk.title} talk={talk} />
       ))}
     </div>
   );
