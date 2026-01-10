@@ -1,4 +1,6 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,17 +15,22 @@ export default function Home() {
 
       {/* Main content */}
       <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16 lg:py-24">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="grid gap-6 lg:grid-cols-10 lg:gap-10">
           {/* Left column - Text content */}
-          <div className="flex flex-col justify-center space-y-8">
+          <div className="flex flex-col justify-center space-y-8 lg:col-span-6 mx-1 md:mx-8 lg:mx-0">
             <div className="space-y-4">
               <div className="font-mono text-sm text-accent">
-                {"> LAUNCHING SOON_ "}
+                <a
+                  href="https://forms.gle/B5s32ZaVeXG8dZJi8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  {"> NOW_ACCEPTING_SUBMISSIONS_ "}
+                </a>
               </div>
-              <h1 className="text-balance font-mono text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
-                DATA ENGINEERING
-                <br />
-                OPEN FORUM
+              <h1 className="text-balance font-mono text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl whitespace-pre-line">
+                Data Engineering Open Forum
               </h1>
               <div className="font-mono text-lg text-muted-foreground sm:text-xl">
                 {"// San Francisco: April 16th, 2026"}
@@ -40,6 +47,24 @@ export default function Home() {
                 We&apos;re building an event that practitioners, leaders, and
                 enthusiasts actively seek out — not just for the technical
                 depth, but for the experience it delivers.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <p className="font-mono font-extrabold text-2xl text-accent">
+                {">>"} CFP is open!{" "}
+                <a
+                  href="https://forms.gle/B5s32ZaVeXG8dZJi8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="border border-accent/30 bg-accent font-mono text-accent-foreground hover:bg-accent/90 hover:cursor-pointer font-semibold">
+                    Submit your talk
+                  </Button>
+                </a>
+              </p>
+              <p className="font-mono text-sm text-muted-foreground">
+                {"// CFP open until Jan 18th, 2026"}
               </p>
             </div>
 
@@ -72,53 +97,27 @@ export default function Home() {
 
             {/* Previous editions */}
             <div className="flex flex-col flex-wrap items-start gap-2">
-              <p className="text-lg">{"Previous editions:"}</p>
               <p className="font-mono">
-                <span className="text-muted-foreground">{"// 2024:"}</span>
-                <a
-                  href="https://2024.dataengineeringopenforum.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-accent hover:underline text-sm"
+                <span className="italic">{"Previous editions: "}</span>
+                <Link
+                  href="/past/2024"
+                  className="hover:text-accent hover:underline"
                 >
-                  [website]
-                </a>
+                  [2024]
+                </Link>
                 {", "}
-
-                <a
-                  href="https://www.youtube.com/playlist?list=PLSECvWLlUYeHM7BWwlEsNYO7aQrsDUQzD"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-accent hover:underline text-sm"
+                <Link
+                  href="/past/2025"
+                  className="hover:text-accent hover:underline"
                 >
-                  [YouTube playlist]
-                </a>
-              </p>
-              <p className="font-mono">
-                <span className="text-muted-foreground">{"// 2025:"}</span>
-                <a
-                  href="https://2025.dataengineeringopenforum.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-accent hover:underline text-sm"
-                >
-                  [website]
-                </a>
-                {", "}
-                <a
-                  href="https://www.youtube.com/playlist?list=PLfXiENmg6yyXKICQiUNutmDyJKk84BVSP"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-accent hover:underline text-sm"
-                >
-                  [YouTube playlist]
-                </a>
+                  [2025]
+                </Link>
               </p>
             </div>
           </div>
 
           {/* Right column - Visual element */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center lg:col-span-4">
             <div className="relative aspect-square w-full max-w-md">
               <Image
                 src="/de_open_forum_goldengate.png"
