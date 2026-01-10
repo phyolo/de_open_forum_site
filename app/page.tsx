@@ -73,60 +73,21 @@ export default function Home() {
 
             {/* Previous editions */}
             <div className="flex flex-col flex-wrap items-start gap-2">
-              <p className="text-lg">{"Previous editions:"}</p>
               <p className="font-mono">
-                <span className="text-muted-foreground">{"// 2024:"}</span>
+                <span className="italic">{"Previous editions: "}</span>
                 <Link
                   href="/past/2024"
-                  className="hover:text-accent hover:underline text-sm"
+                  className="hover:text-accent hover:underline"
                 >
-                  [talks]
+                  [2024]
                 </Link>
                 {", "}
-                <a
-                  href="https://2024.dataengineeringopenforum.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-accent hover:underline text-sm"
-                >
-                  [website]
-                </a>
-                {", "}
-                <a
-                  href="https://www.youtube.com/playlist?list=PLSECvWLlUYeHM7BWwlEsNYO7aQrsDUQzD"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-accent hover:underline text-sm"
-                >
-                  [YouTube playlist]
-                </a>
-              </p>
-              <p className="font-mono">
-                <span className="text-muted-foreground">{"// 2025:"}</span>
                 <Link
                   href="/past/2025"
-                  className="hover:text-accent hover:underline text-sm"
+                  className="hover:text-accent hover:underline"
                 >
-                  [talks]
+                  [2025]
                 </Link>
-                {", "}
-                <a
-                  href="https://2025.dataengineeringopenforum.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-accent hover:underline text-sm"
-                >
-                  [website]
-                </a>
-                {", "}
-                <a
-                  href="https://www.youtube.com/playlist?list=PLfXiENmg6yyXKICQiUNutmDyJKk84BVSP"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-accent hover:underline text-sm"
-                >
-                  [YouTube playlist]
-                </a>
               </p>
             </div>
           </div>
