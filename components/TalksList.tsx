@@ -5,7 +5,7 @@ interface Author {
   title: string;
 }
 
-interface Talk {
+export interface Talk {
   title: string;
   authors: Author[];
   youtubeUrl: string | null;
