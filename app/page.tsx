@@ -14,17 +14,17 @@ export default function Home() {
 
       {/* Main content */}
       <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16 lg:py-24">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-10">
+        <div className="grid gap-12 lg:grid-cols-10 lg:gap-10">
           {/* Left column - Text content */}
-          <div className="flex flex-col justify-center space-y-8">
+          <div className="flex flex-col justify-center space-y-8 lg:col-span-6 mx-1 md:mx-8 lg:mx-0">
             <div className="space-y-4">
               <div className="font-mono text-sm text-accent">
                 {"> LAUNCHING SOON_ "}
               </div>
               <h1 className="text-balance font-mono text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
-                DATA ENGINEERING
+                Data Engineering
                 <br />
-                OPEN FORUM
+                Open Forum
               </h1>
               <div className="font-mono text-lg text-muted-foreground sm:text-xl">
                 {"// San Francisco: April 16th, 2026"}
@@ -132,7 +132,7 @@ export default function Home() {
           </div>
 
           {/* Right column - Visual element */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center lg:col-span-4">
             <div className="relative aspect-square w-full max-w-md">
               <Image
                 src="/de_open_forum_goldengate.png"

@@ -64,7 +64,7 @@ export default async function TalksPage({
     <main className="min-h-screen bg-primary text-primary-foreground bg-diagonal-pattern">
       <PageNavBar />
 
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16 lg:py-24">
+      <div className="mx-1 md:mx-8 lg:mx-auto max-w-6xl px-4 py-12 sm:py-16 lg:py-24">
         {/* Header section with metadata */}
         <div className="space-y-4 mb-12">
           <div className="font-mono text-sm text-accent">
