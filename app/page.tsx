@@ -89,8 +89,7 @@ const galleryItems = [
   {
     src: "/gallery/apache-spark-talk-2025.jpg",
     alt: "Apache Spark 4.0 Talk - Data Engineering Open Forum 2025",
-    title:
-      "Presenting Apache Spark 4.0 - Data Engineering Open Forum 2025",
+    title: "Presenting Apache Spark 4.0 - Data Engineering Open Forum 2025",
     body: [
       "Allison Wang, Staff Software Engineer at Databricks",
       "Jules S. Damji, Technical Staff at Databricks",
@@ -100,14 +99,13 @@ const galleryItems = [
     src: "/gallery/apache-xtable-talk-2025.jpg",
     alt: "Apache XTable talk - Data Engineering Open Forum 2025",
     title: "Presenting Apache XTable - Data Engineering Open Forum 2025",
-    body: [
-      "Dipankar Mazumdar, Staff Data Engineer Advocate at Onehouse.ai",
-    ],
+    body: ["Dipankar Mazumdar, Staff Data Engineer Advocate at Onehouse.ai"],
   },
   {
     src: "/gallery/audience-qna-2025.jpg",
     alt: "Q&A Lines That Never Get Shorter - Data Engineering Open Forum 2025",
-    title: "Q&A Lines That Never Get Shorter - Data Engineering Open Forum 2025",
+    title:
+      "Q&A Lines That Never Get Shorter - Data Engineering Open Forum 2025",
     body: [
       "The conversations don’t stop when the slides end.",
       "During Q&A, attendees line up at the mic for a deeper dive.",
@@ -117,8 +115,7 @@ const galleryItems = [
   {
     src: "/gallery/audience-engagements-2025.jpg",
     alt: "Active Audience Engagements - Data Engineering Open Forum 2025",
-    title:
-      "Active Audience Engagements - Data Engineering Open Forum 2025",
+    title: "Active Audience Engagements - Data Engineering Open Forum 2025",
     body: [
       "A packed auditorium of data professionals actively engages with the speaker, with dozens of attendees raising their hands during a session.",
     ],
@@ -166,14 +163,14 @@ export default function Home() {
                 San Francisco | April 16th, 2026
               </div>
               <p className="text-pretty text-lg leading-relaxed">
-                The most anticipated data engineering community conference of the year, organized by{" "}
-                  <a
-                    rel="noopener noreferrer"
-                    href="#organized-by"
-                    className="underline hover:text-accent"
-                  >
-                    Data Engineer Things (DET)
-                  </a>
+                The most anticipated data engineering community conference of
+                the year, organized by{" "}
+                <a
+                  href="#organized-by"
+                  className="underline hover:text-accent"
+                >
+                  Data Engineer Things (DET)
+                </a>
               </p>
               <div>
                 <a
@@ -214,10 +211,10 @@ export default function Home() {
                 {"> WHY_ATTEND_"}
               </div>
               <p className="text-pretty text-lg leading-relaxed">
-                The Data Engineering Open Forum (DEOF) is a world-class community
-                conference that practitioners and leaders actively seek out,
-                not just for its content, but for the authentic experience
-                it delivers.
+                The Data Engineering Open Forum (DEOF) is a world-class
+                community conference that practitioners and leaders actively
+                seek out, not just for its content, but for the authentic
+                experience it delivers.
               </p>
               <div className="grid gap-4 sm:grid-cols-3">
                 <div className="border-l-2 border-accent/30 pl-4 py-3 space-y-2">
@@ -247,9 +244,10 @@ export default function Home() {
                 <div className="border-l-2 border-accent/30 pl-4 py-3 space-y-2">
                   <p className="font-semibold">Career Opportunities</p>
                   <p className="text-sm text-muted-foreground">
-                    You will get the unique opportunity to explore job opportunities at
-                    top tech companies, meet the hiring teams in person at the event,
-                    and make connections that can turn into real next steps after the event.
+                    You will get the unique opportunity to explore job
+                    opportunities at top tech companies, meet the hiring teams
+                    in person at the event, and make connections that can turn
+                    into real next steps after the event.
                   </p>
                 </div>
               </div>
@@ -269,8 +267,8 @@ export default function Home() {
                 {"> AGENDA_ "}
               </div>
               <p className="font-mono text-sm text-muted-foreground">
-                // We are still finalizing the agenda. Check back later for the latest
-                schedule and speaker updates.
+                // We are still finalizing the agenda. Check back later for the
+                latest schedule and speaker updates.
               </p>
               <MuseumAgendaPrototype />
               <a
@@ -291,8 +289,8 @@ export default function Home() {
                 Watch session recordings from our previous events:{" "}
                 <Link href="/past/2025" className="underline hover:text-accent">
                   DEOF 2025
-                </Link>
-                {" "}and{" "}
+                </Link>{" "}
+                and{" "}
                 <Link href="/past/2024" className="underline hover:text-accent">
                   DEOF 2024
                 </Link>
@@ -325,9 +323,11 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="inline-flex"
                     >
-                      <img
+                      <Image
                         src="/logos/det_logo.jpeg"
                         alt="Data Engineer Things logo"
+                        width={176}
+                        height={176}
                         className="h-44 w-44 object-contain"
                       />
                     </a>
@@ -346,10 +346,9 @@ export default function Home() {
                       >
                         Data Engineer Things (DET)
                       </a>
-                      ,{" "}
-                      a global community built by data engineers for data engineers.
-                      Our mission is to create an open and safe space for data professionals
-                      to learn and connect.
+                      , a global community built by data engineers for data
+                      engineers. Our mission is to create an open and safe space
+                      for data professionals to learn and connect.
                     </p>
                   </div>
                 </div>
@@ -410,8 +409,8 @@ export default function Home() {
                           group.sponsors.length === 1
                             ? "grid grid-cols-1 gap-4"
                             : group.tier === "SILVER"
-                            ? "grid grid-cols-2 gap-4 sm:grid-cols-3"
-                            : "grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4"
+                              ? "grid grid-cols-2 gap-4 sm:grid-cols-3"
+                              : "grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4"
                         }
                       >
                         {group.sponsors.map((sponsor, index) => {
@@ -437,16 +436,16 @@ export default function Home() {
                                       ? "h-[64px] sm:h-[72px]"
                                       : "h-20 sm:h-[88px]"
                                     : sponsor.name === "MinIO"
-                                    ? isSilver
-                                      ? "h-[18px] sm:h-5"
-                                      : "h-[22px] sm:h-[26px]"
-                                    : sponsor.name === "CelerData"
-                                    ? isSilver
-                                      ? "h-7 sm:h-8"
-                                      : "h-10 sm:h-11"
-                                    : isSilver
-                                    ? "h-8 sm:h-9"
-                                    : "h-10 sm:h-11"
+                                      ? isSilver
+                                        ? "h-[18px] sm:h-5"
+                                        : "h-[22px] sm:h-[26px]"
+                                      : sponsor.name === "CelerData"
+                                        ? isSilver
+                                          ? "h-7 sm:h-8"
+                                          : "h-10 sm:h-11"
+                                        : isSilver
+                                          ? "h-8 sm:h-9"
+                                          : "h-10 sm:h-11"
                                 }`}
                               />
                             </a>
@@ -457,6 +456,38 @@ export default function Home() {
                   ))}
                 </div>
               </section>
+            </div>
+
+            {/* Job Opportunities Section */}
+            <div className="space-y-4">
+              <div className="font-mono text-3xl font-semibold text-accent">
+                {"> JOB_OPPORTUNITIES_"}
+              </div>
+              <p className="text-pretty text-lg leading-relaxed">
+                Explore career opportunities at companies hiring data engineers.
+              </p>
+
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <a
+                  href="https://explore.jobs.netflix.net/careers?query=Data%20Engineer&location=any&pid=790313722341&domain=netflix.com&sort_by=relevance&triggerGoButton=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex h-24 items-center justify-center rounded-sm border-2 border-accent/30 bg-primary/40 px-6 transition-colors hover:border-accent hover:bg-primary/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  aria-label="View Data Engineering jobs at Netflix"
+                >
+                  <Image
+                    src="/sponsors/netflix.svg"
+                    alt="Netflix logo"
+                    width={120}
+                    height={40}
+                    className="object-contain brightness-0 invert opacity-80 transition-opacity group-hover:opacity-100"
+                  />
+                </a>
+              </div>
+
+              <p className="font-mono text-sm text-muted-foreground">
+                {"// More opportunities coming soon."}
+              </p>
             </div>
 
             {/* FAQ Section */}
@@ -494,7 +525,9 @@ export default function Home() {
                   >
                     Google Group
                   </a>{" "}
-                  to receive email updates on Data Engineering Open Forum, including event announcements, Call for Proposals (CFP), volunteer opportunities, and more.
+                  to receive email updates on Data Engineering Open Forum,
+                  including event announcements, Call for Proposals (CFP),
+                  volunteer opportunities, and more.
                 </p>
                 <div className="font-mono font-semibold text-accent">
                   {"// QUESTIONS_ "}
