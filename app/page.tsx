@@ -166,7 +166,6 @@ export default function Home() {
                 The most anticipated data engineering community conference of
                 the year, organized by{" "}
                 <a
-                  rel="noopener noreferrer"
                   href="#organized-by"
                   className="underline hover:text-accent"
                 >
@@ -324,9 +323,11 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="inline-flex"
                     >
-                      <img
+                      <Image
                         src="/logos/det_logo.jpeg"
                         alt="Data Engineer Things logo"
+                        width={176}
+                        height={176}
                         className="h-44 w-44 object-contain"
                       />
                     </a>
