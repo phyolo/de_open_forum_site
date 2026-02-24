@@ -73,7 +73,7 @@ test.describe("Homepage", () => {
       page.getByText(/Make connections that outlive the event/i),
     ).toBeVisible();
     await expect(
-      page.getByText(/Exclusive access to career opportinities/i),
+      page.getByText(/Exclusive access to career opportunities/i),
     ).toBeVisible();
   });
 

@@ -182,7 +182,7 @@ export default function Home() {
               <div className="space-y-2 font-mono text-sm text-muted-foreground">
                 <p>{"// Community-driven content with technical depth"}</p>
                 <p>{"// Make connections that outlive the event"}</p>
-                <p>{"// Exclusive access to career opportinities"}</p>
+                <p>{"// Exclusive access to career opportunities"}</p>
               </div>
             </div>
             {/* Right column - Visual element */}
